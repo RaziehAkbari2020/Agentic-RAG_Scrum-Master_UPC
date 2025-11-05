@@ -1,8 +1,7 @@
 [theme]
-# اگر می‌خواهی تم روشن باشد مقدار را "light" بگذار
 base = "dark"
 primaryColor = "#4BA3F5"
-backgroundColor = "#0E1117"
-secondaryBackgroundColor = "#1E1E1E"
+backgroundColor = "#1E1E2E"
+secondaryBackgroundColor = "#252537"
 textColor = "#FFFFFF"
 font = "sans serif"
