@@ -12,7 +12,14 @@ if not st.session_state.get("_pg_cfg_set"):
     st.session_state["_pg_cfg_set"] = True
 
 st.image("upc.png", width=150)
-st.title("Agentic RAG — Intelligent Assistant for Agile Project Management,As an Agile Project Manager — Chat with your data")
+st.markdown("""
+<h2 style='text-align: center; color: #1c1c1c;'>
+<b>Agentic RAG — Intelligent Assistant for Agile Project Management</b>
+</h2>
+<h4 style='text-align: center; color: #555555; font-weight: normal;'>
+As an Agile Project Manager — Chat with your data
+</h4>
+""", unsafe_allow_html=True)
 
 # ------------------ LangChain / LangGraph imports ------------------
 from langchain_core.documents import Document
