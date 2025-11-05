@@ -14,13 +14,12 @@ if not st.session_state.get("_pg_cfg_set"):
     )
     st.session_state["_pg_cfg_set"] = True
 
-# 👇 CSS اضافی برای رنگ سفید دیگر لازم نیست (Streamlit از config.toml می‌خواند)
-# st.markdown(... رنگ سفید اجباری ...)  ← این بخش را حذف کن
+# 🔹 هیچ CSS اجباری برای رنگ‌ها نگذار؛ تم از config.toml می‌آید
 
 # لوگوی UPC
 st.image("upc.png", width=150)
 
-# عنوان دو خطی
+# عنوان دو خطی (بدون رنگ‌های inline)
 st.markdown("""
 <h2 style='text-align: center;'>
 <b>Agentic RAG — Intelligent Assistant for Agile Project Management</b>
@@ -29,6 +28,7 @@ st.markdown("""
 As an Agile Project Manager — Chat with your data
 </h4>
 """, unsafe_allow_html=True)
+
 
 # ------------------ LangChain / LangGraph imports ------------------
 from langchain_core.documents import Document
