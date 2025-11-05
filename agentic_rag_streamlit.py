@@ -8,7 +8,7 @@ import streamlit as st
 
 # ------------------ Basic page config ------------------
 if not st.session_state.get("_pg_cfg_set"):
-    st.set_page_config(page_title="Agentic RAG — Intelligent Assistant for Agile Project Management, As an Agile Project Manager — Chat with your data", page_icon="💬")
+    st.set_page_config(page_title="Agentic RAG — Intelligent Assistant for Agile Project Management,As an Agile Project Manager — Chat with your data", page_icon="💬")
     st.session_state["_pg_cfg_set"] = True
 
 st.image("upc.png", width=150)
