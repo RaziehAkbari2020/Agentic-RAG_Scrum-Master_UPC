@@ -12,7 +12,7 @@ if not st.session_state.get("_pg_cfg_set"):
     st.session_state["_pg_cfg_set"] = True
 
 st.image("upc.png", width=150)
-st.title("As an Agile Project Manager, chat with your data")
+st.title("Agentic RAG — Intelligent Assistant for Agile Project Management,As an Agile Project Manager — Chat with your data")
 
 # ------------------ LangChain / LangGraph imports ------------------
 from langchain_core.documents import Document
