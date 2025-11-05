@@ -14,31 +14,21 @@ if not st.session_state.get("_pg_cfg_set"):
     )
     st.session_state["_pg_cfg_set"] = True
 
-# ✅ تغییر رنگ متن‌ها به سفید در حالت Dark Mode
-st.markdown("""
-    <style>
-    html, body, [class*="stAppViewContainer"], [class*="stMainBlockContainer"] {
-        color: white !important;
-    }
-    h1, h2, h3, h4, h5, h6, p, div, span, label {
-        color: white !important;
-    }
-    </style>
-""", unsafe_allow_html=True)
+# 👇 CSS اضافی برای رنگ سفید دیگر لازم نیست (Streamlit از config.toml می‌خواند)
+# st.markdown(... رنگ سفید اجباری ...)  ← این بخش را حذف کن
 
 # لوگوی UPC
 st.image("upc.png", width=150)
 
-# عنوان دو خطی با رنگ سفید و وسط‌چین
+# عنوان دو خطی
 st.markdown("""
-<h2 style='text-align: center; color: white;'>
+<h2 style='text-align: center;'>
 <b>Agentic RAG — Intelligent Assistant for Agile Project Management</b>
 </h2>
-<h4 style='text-align: center; color: #e0e0e0; font-weight: normal;'>
+<h4 style='text-align: center; font-weight: normal;'>
 As an Agile Project Manager — Chat with your data
 </h4>
 """, unsafe_allow_html=True)
-
 
 # ------------------ LangChain / LangGraph imports ------------------
 from langchain_core.documents import Document
